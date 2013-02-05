@@ -13,11 +13,3 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-
-# ignore others
-*.~
-*.swp
-doc/
-.project
-.DS_Store
-.idea
