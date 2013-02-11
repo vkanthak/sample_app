@@ -55,4 +55,23 @@ describe "Static pages" do
       page.should have_selector('title', :text => "#{base_title}About Us")
     end
   end
+  
+  
+  describe "Junk page" do
+
+      it "should have the h1 'Junk Page'" do
+          visit '/static_pages/junk'
+          page.should have_selector('h1', :text => 'Junk Page')
+    end
+
+    it "should have the title 'Junk Page'" do
+        visit '/static_pages/junk'
+        page.should have_selector('title', :text => "#{base_title}Junk Page")
+    end
+  end
+  
+  
+  
+  
+  
 end
